@@ -1,0 +1,19 @@
+public class BarkingDog {
+  /*This is a small program that determines if you should wake up if the dog is barking at night,
+    it also includes validation to first ensure that the hour falls within a valid range*/
+     
+     public static boolean shouldWakeUp (boolean barking, int hourOfDay) {
+         
+         if (hourOfDay < 0 || hourOfDay > 23) {
+             return false;
+         } //checks validation
+         
+         if (barking == true) {
+             if (hourOfDay < 8 || hourOfDay > 22) {
+                 return true;    
+             }//nested if-else loop
+         } return false;
+         
+     }
+     
+}
